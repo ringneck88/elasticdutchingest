@@ -1,5 +1,5 @@
 const { Client } = require('@elastic/elasticsearch');
-require('dotenv').config();
+require('dotenv').config({ path: '.env', silent: true });
 
 class ElasticsearchClient {
   constructor() {
