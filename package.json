@@ -1,0 +1,28 @@
+{
+  "name": "elasticdutchingest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cron.js",
+    "sync": "node index.js transactions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringneck88/elasticdutchingest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ringneck88/elasticdutchingest/issues"
+  },
+  "homepage": "https://github.com/ringneck88/elasticdutchingest#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^9.2.0",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "node-cron": "^4.2.1"
+  }
+}

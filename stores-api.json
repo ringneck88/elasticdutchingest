@@ -1,0 +1,430 @@
+{
+  "region": "Multi-State",
+  "lastUpdated": "2025-10-21T16:48:05.467Z",
+  "stores": [
+    {
+      "name": "75th Ave - Cardinal Square",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "c9dc614e7d224cd18f6808d46479f756"
+        }
+      ]
+    },
+    {
+      "name": "75th Ave M&T",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "19c71f4b474943c99cd3d7c4c9ad0ed4"
+        },
+        {
+          "name": "Dutchie (New)",
+          "apiKey": "ea359a73ce564e4b95bee875720622d0"
+        }
+      ]
+    },
+    {
+      "name": "Bell Rd - Uncle Harry Corp",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "b0d5458684d24f48bb4c927be754a855"
+        }
+      ]
+    },
+    {
+      "name": "Cultivation - GTL LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "42f2e3f7bb2e4e29b29eb4c853c89317"
+        }
+      ]
+    },
+    {
+      "name": "Distribution - GTL LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "fd26da55e198444c80f18461c6beee3f"
+        }
+      ]
+    },
+    {
+      "name": "E&I Retail - Swallowtail 3 LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "40544f97ae454f168ca1d6a9aa7375dd"
+        }
+      ]
+    },
+    {
+      "name": "E&I Wholesale - Swallowtail 3 LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "67843e29d09d4c3fb71f8c28ab15eacf"
+        }
+      ]
+    },
+    {
+      "name": "GTL LLC Wholesale",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "0346cafc83d7483abd6fc0735bf9e8a3"
+        }
+      ]
+    },
+    {
+      "name": "Mesa - 4245 Investments LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "889f25ea627845e0966efa0b1a62d502"
+        }
+      ]
+    },
+    {
+      "name": "Mirage - Woodstock",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "304ac2bf1e52429a9756374d413ad105"
+        }
+      ]
+    },
+    {
+      "name": "Northern - GTL LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "ff22efdbcb3848afb847348eed3c60d2"
+        }
+      ]
+    },
+    {
+      "name": "Optima Consulting Services LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "764707ce5352486a8667cf3981ff5822"
+        }
+      ]
+    },
+    {
+      "name": "Scottsdale - EBA Holdings Inc",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "11020b5819764490b9f37e837e11cf54"
+        }
+      ]
+    },
+    {
+      "name": "Tempe - Swallowtail 3 LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "7b740c2ee6f94e698b2e7bbf8cf2ddb1"
+        }
+      ]
+    },
+    {
+      "name": "El Mirage - MCD-SE Venture 25 LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "b869ade395fe4b24983a07cdf04fda3c"
+        }
+      ]
+    },
+    {
+      "name": "Buckeye Woodstock 1",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "304ac2bf1e52429a9756374d413ad105"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Arcadia (Distribution - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "d05b988e8d68463e80c1909ac2080b8f"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Bonita Springs (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "36ee688ff3a54bcd8385daed73d9a77b"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Bradenton (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "843cb110410440dc9a30ed773086db83"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Brandon (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "8616fa4d09844ef6b2948ea051a86b3d"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Cape Coral (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "bfb5ba6135be4c2f87c2dae5dc65f5e4"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Delray Beach (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "5e2cd18b41d842ddb5f71653ad87c23b"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Gainesville (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "50245e95667f44b1bbfa978e4941bda0"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Jacksonville (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "cc1f8cc819224ee299ae92fe30b76ba0"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Lakeland (Distribution - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "d40ecfaa9f0f4865b7ea3b0b2fc1f16b"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Longwood (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "ded7a979a93a4762854405ce9e96f22c"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Melbourne (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "b8988b2098bb40758c84b716a3166d0c"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Miami Pine Lake (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "f8de0bb5923f4776b84d8d1b14a284f7"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Orlando (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "24ded778c80f432d8bf7c2a374246b83"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Sarasota (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "77b4ec09982242bd9743ae8e8956e20f"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist St. Augustine (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "c978ff75294b41b895169cf435670167"
+        }
+      ]
+    },
+    {
+      "name": "Cannabist Stuart (Dispensary - Medical)",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "8179bf6f1d934f49b483ce47e5b63d2c"
+        }
+      ]
+    },
+    {
+      "name": "The Mint IL LLC",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "73ffbbba679b44eaa96c3757536206c3"
+        }
+      ]
+    },
+    {
+      "name": "Coldwater Retail",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "39570af865b9438faccccfe4254b7480"
+        }
+      ]
+    },
+    {
+      "name": "Kalamazoo Retail",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "efda9d54e3144b36bcd3cc2ce300fc71"
+        }
+      ]
+    },
+    {
+      "name": "Monroe Retail",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "b24a4df0634d4fc9a9ab9c00ab7a16af"
+        }
+      ]
+    },
+    {
+      "name": "Portage Retail",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "cc13cfb6b321429d9df41417c1a2aabe"
+        }
+      ]
+    },
+    {
+      "name": "Mint Cannabis - Roseville",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "9ccfadcda76e4b0e98eeb6dc49530fff"
+        }
+      ]
+    },
+    {
+      "name": "Mint Cannabis - New Buffalo",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "4516520bd78943e8adb7bd1509ca5403"
+        }
+      ]
+    },
+    {
+      "name": "Paradise",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "2a411c9f31144d238f403078d90fd6fc"
+        }
+      ]
+    },
+    {
+      "name": "Spring Valley Rainbow",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Dutchie",
+          "apiKey": "1a98b2685fd44ff8a885131543e30711"
+        }
+      ]
+    },
+    {
+      "name": "The Mint - St Peters Retail",
+      "status": "active",
+      "apis": [
+        {
+          "name": "Internal",
+          "apiKey": "5e2b613e0e9042af8d3d57b0821be742"
+        }
+      ]
+    }
+  ]
+}
