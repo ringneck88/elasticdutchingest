@@ -3,6 +3,11 @@ require('dotenv').config();
 
 class ElasticsearchClient {
   constructor() {
+    console.log('Initializing Elasticsearch client...');
+    console.log('ELASTICSEARCH_NODE:', process.env.ELASTICSEARCH_NODE || 'NOT SET');
+    console.log('ELASTICSEARCH_USERNAME:', process.env.ELASTICSEARCH_USERNAME ? 'SET' : 'NOT SET');
+    console.log('ELASTICSEARCH_PASSWORD:', process.env.ELASTICSEARCH_PASSWORD ? 'SET' : 'NOT SET');
+
     const clientConfig = {
       node: process.env.ELASTICSEARCH_NODE
     };
@@ -20,6 +25,11 @@ class ElasticsearchClient {
       console.log('Using non-authenticated Elasticsearch connection');
     }
 
+    console.log('Client config (without password):', {
+      node: clientConfig.node,
+      hasAuth: !!clientConfig.auth
+    });
+
     this.client = new Client(clientConfig);
 
     // Support for multiple indices by data type
@@ -36,11 +46,19 @@ class ElasticsearchClient {
 
   async connect() {
     try {
+      console.log('Attempting to connect to Elasticsearch...');
       const health = await this.client.cluster.health();
-      console.log('Connected to Elasticsearch:', health.cluster_name);
+      console.log('✅ Connected to Elasticsearch:', health.cluster_name);
+      console.log('Cluster status:', health.status);
       return true;
     } catch (error) {
-      console.error('Failed to connect to Elasticsearch:', error.message);
+      console.error('❌ Failed to connect to Elasticsearch');
+      console.error('Error type:', error.constructor.name);
+      console.error('Error message:', error.message);
+      console.error('Error details:', JSON.stringify(error, null, 2));
+      if (error.meta) {
+        console.error('Meta:', error.meta);
+      }
       throw error;
     }
   }
