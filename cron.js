@@ -29,12 +29,16 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log('=== Dutchie Transaction Sync Cron Job ===');
-  console.log(`Health check server running on port ${PORT}`);
+  console.log(`Health check server running on 0.0.0.0:${PORT}`);
   console.log(`Cron schedule: ${cronSchedule}`);
   console.log(`Next run will execute: node index.js transactions`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log('Waiting for scheduled time...\n');
+}).on('error', (err) => {
+  console.error('Failed to start HTTP server:', err);
+  process.exit(1);
 });
 
 // Schedule the job
@@ -85,13 +89,45 @@ if (process.env.RUN_ON_STARTUP === 'true') {
 // Keep the process alive
 console.log('Cron job is running. Press Ctrl+C to stop.\n');
 
-// Graceful shutdown
+// Graceful shutdown handlers
+let isShuttingDown = false;
+
 process.on('SIGTERM', () => {
-  console.log('\nReceived SIGTERM. Shutting down gracefully...');
-  process.exit(0);
+  if (isShuttingDown) return;
+  isShuttingDown = true;
+
+  console.log('\n⚠️  Received SIGTERM. Shutting down gracefully...');
+
+  server.close(() => {
+    console.log('HTTP server closed');
+    process.exit(0);
+  });
+
+  // Force shutdown after 10 seconds
+  setTimeout(() => {
+    console.error('Forced shutdown after timeout');
+    process.exit(1);
+  }, 10000);
 });
 
 process.on('SIGINT', () => {
-  console.log('\nReceived SIGINT. Shutting down gracefully...');
-  process.exit(0);
+  if (isShuttingDown) return;
+  isShuttingDown = true;
+
+  console.log('\n⚠️  Received SIGINT. Shutting down gracefully...');
+
+  server.close(() => {
+    console.log('HTTP server closed');
+    process.exit(0);
+  });
+});
+
+// Handle uncaught errors
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
