@@ -19,6 +19,9 @@
     "url": "https://github.com/ringneck88/elasticdutchingest/issues"
   },
   "homepage": "https://github.com/ringneck88/elasticdutchingest#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@elastic/elasticsearch": "^9.2.0",
     "axios": "^1.12.2",
