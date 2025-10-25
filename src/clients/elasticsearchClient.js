@@ -4,9 +4,17 @@ require('dotenv').config({ path: '.env', silent: true });
 class ElasticsearchClient {
   constructor() {
     console.log('Initializing Elasticsearch client...');
+    console.log('All environment variables:', Object.keys(process.env).filter(k => k.startsWith('ELASTIC')));
     console.log('ELASTICSEARCH_NODE:', process.env.ELASTICSEARCH_NODE || 'NOT SET');
     console.log('ELASTICSEARCH_USERNAME:', process.env.ELASTICSEARCH_USERNAME ? 'SET' : 'NOT SET');
     console.log('ELASTICSEARCH_PASSWORD:', process.env.ELASTICSEARCH_PASSWORD ? 'SET' : 'NOT SET');
+
+    if (!process.env.ELASTICSEARCH_NODE) {
+      throw new Error(
+        'ELASTICSEARCH_NODE environment variable is required! ' +
+        'Please set it in Railway Variables tab to: https://elasticsearch-production-486b.up.railway.app'
+      );
+    }
 
     const clientConfig = {
       node: process.env.ELASTICSEARCH_NODE
